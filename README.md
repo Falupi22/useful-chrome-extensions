@@ -12,10 +12,10 @@ A curated list of useful extensions for daily usage of Chrome, tailored for deve
 
 ### Normal Users🖥️
 
-* voice-control - Mutes all the tabs that are currently playing audio.🔉❌
+* voice-control - Mutes all the tabs that are currently playing audio by a context menu option.🔉❌
 
 ### Developers🧑‍💻
-* close-stackoverflow - Closes all the stackoverflows tabs of the current window.❌
+* close-stackoverflow - Closes all the stackoverflows tabs of the current window by a context menu option.❌
 
 ## Future Features🔥
 * A GUI will be developed so normal users could create their own extensions.🖱️
