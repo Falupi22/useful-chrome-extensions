@@ -11,7 +11,7 @@ chrome.contextMenus.onClicked.addListener(async (info) => {
 
     // Filter and close tabs with "stackoverflow" in their URL
     for (const tab of tabs) {
-      if (tab.url.includes("stackoverflow.com")) {
+      if (tab.url.startsWith("https://stackoverflow.com")) {
         chrome.tabs.remove(tab.id);
       }
     }
