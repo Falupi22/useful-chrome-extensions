@@ -4,11 +4,11 @@ A curated list of useful extensions for daily usage of Chrome, tailored for deve
 
 ## Table of Contents
 
-- [Productivity](#productivity🆕)
-- [Future Features](#future-features🔥)
+- [Productivity](#productivity)
+- [Future Features](#future-features)
 - [License](#license)
 
-## Productivity🆕
+## Productivity
 
 ### Normal Users🖥️
 
@@ -17,7 +17,7 @@ A curated list of useful extensions for daily usage of Chrome, tailored for deve
 ### Developers🧑‍💻
 * close-stackoverflow - Closes all the stackoverflows tabs of the current window by a context menu option.❌
 
-## Future Features🔥
+## Future Features
 * A GUI will be developed so normal users could create their own extensions.🖱️
 * The project will become open source.🌍
 
