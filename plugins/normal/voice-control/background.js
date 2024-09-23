@@ -1,8 +1,11 @@
-chrome.contextMenus.create({
-  id: "muteAudioTabs",
-  title: "Mute all audio tabs",
-  contexts: ["all"]
+chrome.runtime.onInstalled.addListener(() => {
+  chrome.contextMenus.create({
+    id: "muteAudioTabs",
+    title: "Toggle mute of all audio tabs",
+    contexts: ["all"]
+  });
 });
+
 
 chrome.contextMenus.onClicked.addListener(async (info) => {
   if (info.menuItemId === "muteAudioTabs") {
@@ -13,8 +16,8 @@ chrome.contextMenus.onClicked.addListener(async (info) => {
     for (const tab of tabs) {
       // Check if the tab is playing audio
       if (tab.audible) {
-        chrome.tabs.update(tab.id, { muted: true });
+        chrome.tabs.update(tab.id, { muted: !tab.mutedInfo.muted });
       }
     }
   }
-});
+})

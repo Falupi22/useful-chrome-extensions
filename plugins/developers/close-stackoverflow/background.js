@@ -1,7 +1,9 @@
-chrome.contextMenus.create({
-  id: "closeStackOverflowTabs",
-  title: "Close all Stack Overflow tabs",
-  contexts: ["all"]
+chrome.runtime.onInstalled.addListener(() => {
+  chrome.contextMenus.create({
+    id: "closeStackOverflowTabs",
+    title: "Close all Stack Overflow tabs",
+    contexts: ["all"]
+  });
 });
 
 chrome.contextMenus.onClicked.addListener(async (info) => {
