@@ -1,5 +1,4 @@
-document.getElementById("message").onclick = function () {
-    console.log("shit");
+document.addEventListener('DOMContentLoaded', function () {
     chrome.storage.local.get("muted", function (result) {
         console.log(result);
         // Check if result is undefined or doesn't exist in storage
@@ -16,4 +15,4 @@ document.getElementById("message").onclick = function () {
         // Update the message in the popup
         document.getElementById("message").innerHTML = `${result.muted} tabs have been toggled`;
     });
-};
+}, false);
